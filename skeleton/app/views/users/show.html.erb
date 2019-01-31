@@ -1,0 +1,25 @@
+<style>
+  .header {
+    text-align: center
+    
+  }
+  
+</style>
+
+
+<h1 class='header'>This User </h1>
+
+<% if logged_in? %>
+<%= @user.username %>
+
+<br>
+
+<a href="<%= cats_url%>"> Cats to Rent </a>
+
+<% else %>
+<p> Go away, bad hacker! </p> 
+
+<% end %>
+
+
+
